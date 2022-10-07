@@ -6,85 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="albert, cv, resume">
     <meta name="description" content="Это сайт - резюме Альберта">
+    <link rel="stylesheet" href="styles.css">
     <title>Albert Resume</title>
 </head>
 <body>
-    <img src="avatar2.JPG" alt="Тут фотка" width="300">
+    <div class="container">
 
-    <h1>Альберт</h1>
-    <p>Я основатель одноименного <strong>Youtube канала</strong> и онлайн школы по
-    программированию <strong>Result School</strong></p>
-    <p>Я люблю <em>путешестовать, заниматься спортом и программировать</em></p>
+        <div class="info">
+            <img src="avatar2.JPG" alt="Тут фотка" class="avatar">
 
-    <h2><u>Cписок социальных сетей:</u></h2>    
-    <a href="https://www.Instagram.com/vladilen.minin/"
-    target="_blank">Instagram/</a>
-    <a href="https://www.Instagram.com/vladilen.minin/" 
-    target="_blank">Telegramm/</a>    
-    <a href="https://www.Instagram.com/vladilen.minin/" 
-    target="_blank">Youtube/</a>
+            <div class="info-text">
+                <h1>Альберт</h1>
+                <p>Я основатель одноименного <strong>Youtube канала</strong> и онлайн школы по
+                программированию <strong>Result School</strong></p>
+                <p>Я люблю <em>путешестовать, заниматься спортом и программировать</em></p>
 
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>Путешествия</li>
-        <li>Блоггинг</li>
-        <li>Горные лыжи</li>
-        <li>ММА</li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-    <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
-            </thead>        
-        <tbody>
-            <tr>
-                <td>Менеджер</td>
-                <td>Fronted</td>
-                <td>2012-2015</td>
-            </tr>
-            <tr>
-                <td>Маркетинг</td>
-                <td>Fronted</td>
-                <td>2015-2019</td>
-            </tr>
-            <tr>
-                <td>Партнерский канал</td>
-                <td>Fronted</td>
-                <td>2019-2022</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name"
-            placeholder="Введите имя">
+                <h4><u>Cписок социальных сетей:</u></h4>    
+                <a href="https://www.Instagram.com/vladilen.minin/"
+                target="_blank">Instagram/</a>
+                <a href="https://www.Instagram.com/vladilen.minin/" 
+                target="_blank">Telegramm/</a>    
+                <a href="https://www.Instagram.com/vladilen.minin/" 
+                target="_blank">Youtube/</a>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email"
-            placeholder="Введите email">
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ul class="list">
+                <li>Путешествия</li>
+                <li>Блоггинг</li>
+                <li>Горные лыжи</li>
+                <li>ММА</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" 
-            placeholder="Введите сообщение...">
-            </textarea>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                   <!--  <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>         -->
+                <tbody>
+                    <tr>
+                        <td>Менеджер</td>
+                        <td>Fronted</td>
+                        <td>2012-2015</td>
+                    </tr>
+                    <tr>
+                        <td>Маркетинг</td>
+                        <td>Fronted</td>
+                        <td>2015-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Партнерский канал</td>
+                        <td>Fronted</td>
+                        <td>2019-2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-            <input type="submit" value="Отправить!">
         
-    </form>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name"
+                    placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email"
+                    placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="20" rows="5" 
+                placeholder="Введите сообщение...">
+                </textarea>
+            </div>
+
+                <input class="btn" type="submit" value="Отправить!">
+            
+        </form>
+    </div>
     
 </body>
 </html>
